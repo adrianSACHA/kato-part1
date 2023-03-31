@@ -17,7 +17,36 @@ body {
 .header__menu {
   display: flex;
   gap: 30px;
+}
 
+.header__input__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 432px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.header__input {
+  height: 98%;
+  width: 98%;
+  color: #9a9a9a;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.input__button {
+  background-color: #ff0022;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+  height: 100%;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #ff0022;
 }
 
 .account__wrapper {
