@@ -2,8 +2,10 @@ body {
   color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 1242px;
+  /* background-color: black; */
 }
 
 .header__wrapper {
@@ -12,11 +14,19 @@ body {
   justify-content: space-between;
   background-color: black;
   height: 66px;
+  max-width: 1242px;
+  padding-left: 27px;
 }
 
 .header__menu {
   display: flex;
+  align-items: center;
   gap: 30px;
+}
+
+.header__logo__img {
+  max-width: 224px;
+  width: 100%;
 }
 
 .header__input__wrapper {
@@ -24,33 +34,40 @@ body {
   align-items: center;
   justify-content: center;
   height: 40px;
-  width: 432px;
+  max-width: 432px;
   border-radius: 5px;
   background-color: white;
 }
 
 .header__input {
-  height: 98%;
+  height: 38px;
   width: 98%;
   color: #9a9a9a;
   font-size: 16px;
-  border-radius: 5px;
   border: none;
+  padding-left: 10px;
+  border-radius: 5px 0 0 5px;
+  outline: 0;
 }
 
 .input__button {
+  margin: 0;
   background-color: #ff0022;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 114px;
-  height: 100%;
+  height: 40px;
   border-radius: 0 5px 5px 0;
-  border: 1px solid #ff0022;
+  border: none;
+  outline: none;
+  gap: 12px;
+  padding-right: 16px;
 }
 
 .account__wrapper {
   display: flex;
+  background-color: black;
 }
 
 .account__sell {
