@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
 body {
   color: white;
   font-family: "Open Sans", sans-serif;
@@ -5,7 +15,6 @@ body {
   margin: 0 auto;
   padding: 0;
   max-width: 1242px;
-  /* background-color: black; */
 }
 
 .header__wrapper {
@@ -27,6 +36,13 @@ body {
 .header__logo__img {
   max-width: 224px;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header__logo__img {
+    width: 134px;
+    height: 23px;
+  }
 }
 
 .header__input__wrapper {
@@ -65,9 +81,24 @@ body {
   padding-right: 16px;
 }
 
+@media (max-width: 992px) {
+  .input__button {
+   width: 43px;
+   height: 40px;
+   padding-right: 6px;
+  }
+}
+
+@media (max-width: 992px) {
+  .input__button__word {
+    display: none;
+  }
+}
+
 .account__wrapper {
   display: flex;
   background-color: black;
+  align-items: center;
 }
 
 .account__sell {
@@ -79,6 +110,12 @@ body {
   width: 123px;
   height: 39px;
   border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  .account__sell {
+    display: none;
+  }
 }
 
 .account__sell:hover {
@@ -103,4 +140,22 @@ body {
   /* display: flex; */
   display: none;
   flex-direction: column;
+}
+
+.sidebar__sell {
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: 2px solid #03adfd;
+  width: 123px;
+  height: 39px;
+  border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  .sidebar__sell {
+    display: block;
+  }
 }
