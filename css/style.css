@@ -1,0 +1,60 @@
+body {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  height: 66px;
+}
+
+.header__menu {
+  display: flex;
+  gap: 30px;
+
+}
+
+.account__wrapper {
+  display: flex;
+}
+
+.account__sell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: 2px solid #03adfd;
+  width: 123px;
+  height: 39px;
+  border-radius: 5px;
+}
+
+.account__sell:hover {
+  border-color: white;
+}
+
+.hamburger__menu__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.account__bg {
+  position: relative;
+  z-index: 0;
+}
+
+.account__icon {
+  position: absolute;
+  z-index: 2;
+}
+.sidebar {
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+}
