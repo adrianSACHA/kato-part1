@@ -164,10 +164,6 @@ body {
   }
 }
 
-.account__sell:hover {
-  border-color: white;
-}
-
 .hamburger__menu {
   display: flex;
   flex-direction: row;
@@ -200,13 +196,13 @@ body {
   .hamburger__menu input {
     width: auto;
     height: auto;
-  content: url(../first-part/pasek-serwis-d-kopia_0001s_0000_Inteligentny-obiekt-wektorowy.png);
+    content: url(../first-part/pasek-serwis-d-kopia_0001s_0000_Inteligentny-obiekt-wektorowy.png);
   }
 }
 
 @media (max-width: 768px) {
   .hamburger__menu input {
-   appearance: none;
+    appearance: none;
   }
 }
 
@@ -224,7 +220,7 @@ body {
   .hamburger__menu input:checked {
     width: auto;
     height: auto;
-  content: url(../first-part/pasek-serwis-m-kopia_0001s_0004_Inteligentny-obiekt-wektorowy.png);
+    content: url(../first-part/pasek-serwis-m-kopia_0001s_0004_Inteligentny-obiekt-wektorowy.png);
   }
 }
 
