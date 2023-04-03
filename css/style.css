@@ -185,6 +185,7 @@ body {
   height: 8px;
   z-index: 1;
   cursor: pointer;
+  transition: all 0.5s ease-in;
 }
 
 @media (max-width: 768px) {
@@ -192,12 +193,6 @@ body {
     width: auto;
     height: auto;
     content: url(../first-part/pasek-serwis-d-kopia_0001s_0000_Inteligentny-obiekt-wektorowy.png);
-  }
-}
-
-@media (max-width: 768px) {
-  .hamburger__menu input {
-    appearance: none;
   }
 }
 
@@ -209,6 +204,7 @@ body {
 
 .hamburger__menu input:checked {
   transform: rotate(180deg);
+  transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -216,6 +212,7 @@ body {
     width: auto;
     height: auto;
     content: url(../first-part/pasek-serwis-m-kopia_0001s_0004_Inteligentny-obiekt-wektorowy.png);
+    transform: rotate(-90deg);
   }
 }
 
@@ -243,23 +240,9 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  .sidebar {
-    translate: 100%;
-    height: 100vh;
-  }
-}
-
 .account__icon {
   position: absolute;
   z-index: 2;
-}
-
-@media (max-width: 768px) {
-  .sidebar {
-    translate: 100%;
-    height: 100vh;
-  }
 }
 
 .sidebar {
@@ -314,6 +297,7 @@ body {
 }
 
 .sidebar__sell {
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
