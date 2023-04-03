@@ -15,12 +15,7 @@ body {
   margin: 0 auto;
   padding: 0;
   max-width: 1242px;
-}
-
-.container {
-  max-width: 100%;
-  background-color: black;
-  height: 66px;
+  overflow-x: hidden;
 }
 
 .header__wrapper {
@@ -299,6 +294,7 @@ body {
   gap: 10px;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .sidebar__items {
