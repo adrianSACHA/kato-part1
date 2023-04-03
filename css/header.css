@@ -1,0 +1,125 @@
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  height: 66px;
+  max-width: 1242px;
+  padding-left: 27px;
+}
+
+@media (max-width: 768px) {
+  .header__wrapper {
+    gap: 17px;
+  }
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .header__menu {
+    width: 100%;
+    justify-content: space-between;
+    gap: 5px;
+  }
+}
+
+.header__logo__img {
+  max-width: 224px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header__logo__img {
+    width: 134px;
+    height: 23px;
+  }
+}
+
+.header__input__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  max-width: 432px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .header__input__wrapper {
+    order: 5;
+  }
+}
+
+.header__input {
+  height: 38px;
+  width: 98%;
+  color: #9a9a9a;
+  font-size: 16px;
+  border: none;
+  padding-left: 10px;
+  border-radius: 5px 0 0 5px;
+  outline: 0;
+}
+
+@media (max-width: 768px) {
+  .header__input {
+    display: none;
+  }
+}
+
+.input__button {
+  margin: 0;
+  background-color: #ff0022;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+  height: 40px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  outline: none;
+  gap: 12px;
+  padding-right: 16px;
+}
+
+@media (max-width: 992px) {
+  .input__button {
+    width: 43px;
+    height: 40px;
+    padding-right: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .input__button {
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .input__button__word {
+    display: none;
+  }
+}
+
+.input__category input {
+  content: url(../first-part/pasek-serwis-d-kopia_0001s_0002_Warstwa-9.png);
+  width: 14px;
+  height: 8px;
+}
+
+.input__category input {
+  appearance: none;
+}
+
+@media (max-width: 768px) {
+  .input__category {
+    display: none;
+  }
+}

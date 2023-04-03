@@ -1,0 +1,180 @@
+.account__wrapper {
+  display: flex;
+  background-color: black;
+  align-items: center;
+  max-width: 241px;
+  position: relative;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .account__wrapper {
+    max-width: 100px;
+  }
+}
+
+.hamburger__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  background-color: #2e2e2e;
+  width: 102px;
+  height: 66px;
+  padding-right: 13px;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger__menu {
+    width: 66px;
+    background-color: black;
+  }
+}
+
+.hamburger__menu input {
+  content: url(../first-part/pasek-serwis-d-kopia_0001s_0002_Warstwa-9.png);
+  width: 14px;
+  height: 8px;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+@media (max-width: 768px) {
+  .hamburger__menu input {
+    width: auto;
+    height: auto;
+    content: url(../first-part/pasek-serwis-d-kopia_0001s_0000_Inteligentny-obiekt-wektorowy.png);
+  }
+}
+
+.hamburger__menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hamburger__menu input:checked {
+  transform: rotate(180deg);
+  transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .hamburger__menu input:checked {
+    width: auto;
+    height: auto;
+    content: url(../first-part/pasek-serwis-m-kopia_0001s_0004_Inteligentny-obiekt-wektorowy.png);
+    transform: rotate(-90deg);
+  }
+}
+
+.hamburger__menu__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .hamburger__menu__icon {
+    display: none;
+  }
+}
+
+.account__bg {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .account__bg {
+    display: none;
+  }
+}
+
+.account__icon {
+  position: absolute;
+  z-index: 2;
+}
+
+.sidebar {
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 241px;
+  height: 251px;
+  top: 0;
+  padding-top: 10px;
+  background-color: #2e2e2e;
+  font-size: 15px;
+  translate: 0 -100%;
+  transition: translate 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    translate: 100%;
+    height: 100vh;
+  }
+}
+
+.hamburger__menu:has(input:checked) + .sidebar {
+  translate: 0;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar__items {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+
+.sidebar__img {
+  display: flex;
+  justify-self: center;
+}
+
+.sidebar__divider {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+}
+
+.sidebar__sell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border: 2px solid #03adfd;
+  width: 123px;
+  height: 39px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.sidebar__sell:hover {
+  border-color: white;
+}
+
+@media (max-width: 992px) {
+  .sidebar__sell {
+    display: flex;
+  }
+}
+
+.sidebar__logout {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
