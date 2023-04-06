@@ -12,4 +12,5 @@ Requirements:
 - html5/css3
 - latest browsers (Google Chrome, Mozilla Firefox, Internet Explorer 11, Safari 11+, and Opera)
 -------------------------------------------
-To DO - on small size need to change people icon to hamburger bars.
+To DO - 
+- on small size need to change people icon to hamburger bars.
